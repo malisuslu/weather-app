@@ -10,7 +10,7 @@ function Content({city}) {
     city === "" && (city = "ankara");
 
     React.useEffect(() => {
-        axios(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=tr&appid=${process.env.REACT_APP_API_KEY}`)
+        axios(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=tr&appid=9579b5976292e51b2440d0c463b45dd0`)
         .then(res => {
             setWeather(res.data);
         }).catch(err => {
